@@ -1,0 +1,7 @@
+- name: ping prod server only
+  hosts: all
+  gather_facts: false
+  become: false
+  tasks:
+     - name: Pinging Host
+       ping:
